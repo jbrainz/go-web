@@ -8,10 +8,10 @@ import (
 
 // Home is the homepage handler
 func Home(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "home.html")
+	render.Template(w, "home.page.html")
 }
 
 // About :  the about page handler
 func About(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "about.html")
+	render.Template(w, "about.page.html")
 }
